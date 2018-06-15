@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AJAX GIPHY HW</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="jumbotron" id="header">
+            <h1>add a genre</h1>
+    </div>
+
+    <form class="form-inline" id="Search">
+        <div class="form-group">
+            <label for="Input">Search for something</label>
+            <input type="text" id="Input">
+        </div>
+        <input id="add" type="submit" value="submit">
+    </form>
+
+    <div class="row">
+        <div class="container">
+            <div class="btn-group inline pull-left">
+                <button class="btn btn-primary" id="item" data-search="Scifi">Sci-fi</button>
+                <button class="btn btn-primary" id="item" data-search="Noir">Noir</button>
+                <button class="btn btn-primary" id="item" data-search="fantasy">Fantasy</button>
+                <button class="btn btn-primary" id="item" data-search="horror">Horror</button>
+
+                <div id="myButtons"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="container">
+            <span>
+                <div id="gifArea"></div>
+            </span>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js.js"></script>
+
+</body>
+
+</html>
